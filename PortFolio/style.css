@@ -1,0 +1,368 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    font-style: bold;
+}
+.nav{
+    width: 100%;
+    background-color: rgb(36, 36, 36);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 8% 3% 8%;
+    position: fixed;
+    font-weight: 600;
+}
+@media (max-width: 768px){
+   .nav{font-weight: bold;
+        font-size: small;
+        padding: 20px 2px 20px 5px;
+        flex: 1fr 3fr 1fr;
+ }
+}
+/* Setting the Stracture of nav bar margin:20px to left is the to keep space between <a>s in nav*/
+
+ .n a{
+    text-decoration: none;
+    margin-left: 20px;
+    color: beige;
+    transition: 0.5s ease;
+}
+.n{
+    margin-left: 5%;
+}
+.n a:hover{
+    color: orangered;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.nav p{
+    color: beige;
+    font-size: x-large;
+    transition: 0.5s ease;
+}
+@media (max-width: 768px){
+   .nav p{font-size: medium; 
+          margin-right: 0px;
+          padding: 0px;
+}
+   .n{
+    margin-right: 0px;
+   }
+   .n a{
+    margin-left: 5px;
+   }
+}
+.nav p:hover{
+    text-shadow: 0 0 25px orangered;
+    color: orangered;
+    transform: scale(1.2);
+}
+ /*letters size adjustment after hovering*/
+.nav p span{
+    color: orangered;
+}
+.nav p span:hover{
+    color: bisque;
+}
+.animation{
+     animation-duration: 2s;
+     animation-name: slidein;
+}
+.animation1{
+        animation-duration: 2.5s;
+        animation-name: slidein;
+   }
+.animation2{
+        animation-duration: 2.5s;
+        animation-name: slidein;
+   }
+ .animation3{
+        animation-duration: 2.75s;
+        animation-name:slidein;
+   }
+        @keyframes slidein {
+           from {
+             margin-left: 60%;
+             width: 100%;
+           }
+         
+           to {
+             margin-left: 0%;
+             width: 100%;
+           }
+     }
+
+/* Animation of text */
+
+.nav button{
+   background-color: beige;
+   border: none;
+   color: orangered;
+   padding: 1%;
+   border-radius: 10%;
+   transition: 0.5s linear;
+}
+.nav button:hover{
+    background-color: orangered;
+    color: beige;
+    transform: scale(1.01);
+    box-shadow: 0 0 25px orangered;
+    border: none;
+ }
+ @media (max-width: 768px){
+    .nav button{font-size: medium; 
+           padding: 0.5%;
+           font-size: x-small;
+ }
+ }
+
+ /*Styling the nav bar*/
+
+.main{
+    width: 100%;
+    background-color: beige;
+    padding: 35px 15% 0;
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 768px){
+    .main section h1{font-size: medium; 
+                     font-weight: bold;
+                     margin-top: 20px;
+ }
+   .main{
+    padding: 35px 40px 10px;
+   }
+}
+.main section{
+    flex:1.5;
+    margin-top:12%;
+    padding-left: 2%;
+}
+.main section h1{
+    font-weight: 800;
+    font-size: x-large;
+}
+.animation3{
+    animation-duration: 2.75s;
+    animation-name:slidein;
+}
+.main section h2{
+    font-weight: 1000;
+    font-size: x-large;
+}
+.main section h2 span{
+    color: orangered;
+}
+.main section h3{
+    font-weight: 1000;
+    font-size: xx-large;
+}
+.b1{
+    color:beige;
+    background-color: black;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border: none;
+    border-radius:5%;
+    font-size: medium;
+    transition: 0.5s,ease;
+}
+.b1:hover{
+    background-color: orangered;
+    cursor: pointer;
+    transform: scale(1.1);
+    border: none;
+}
+.b2{
+    color: beige;
+    background-color: orangered;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-left: 3%;
+    border: none;
+    border-radius: 5%;
+    font-size: medium;
+    transition: 0.5s,ease;
+}
+.b2:hover{
+    background-color: black;
+    cursor: pointer;
+    transform: scale(1.1);
+    border: none;
+}
+/* Text+button*/
+.main div{
+    flex:1;
+    padding: 5%;
+    margin-top: 10%;
+}
+   
+.main div img{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 50%;
+}
+
+/*Styling and Stracture of the first div*/
+
+.middle{
+    width: 100%;
+    background-color: black;
+    padding: 0 10% 5% 10%;
+    display: flex;
+    align-items: center;
+    color: beige;
+}
+.middle section{
+    flex:2;
+    margin-top:10%;
+    padding-left: 2%;
+}
+.animation{
+    font-weight: 800;
+    font-size: x-large;
+}
+.mystyle{
+    animation-duration: 2.75s;
+    animation-name:slidein;
+}
+.middle section h1 span{
+    color: orangered;
+}
+.middle section h2{
+    font-weight: 1000;
+    font-size: xx-large;
+}
+.middle section h2 span{
+    color: orangered;
+}
+.b3{
+    color: beige;
+    background-color: orangered;
+    padding: 2%;
+    border: none;
+    border-radius: 5%;
+    font-size: medium;
+    transition: 0.5s,ease;
+}
+.b3:hover{
+    background-color: beige;
+    color: orangered;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+/* Text+button*/
+.middle div{
+    flex:1;
+    padding: 5%;
+    margin-top: 10%;
+}   
+.middle div img{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 50px orangered;
+}
+
+/*Styling and Stracture of the Second div*/
+
+.final{
+    width: 100%;
+    padding: 4% 0 4% 0;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.final input{
+    border: 1px solid black;
+    border-radius: 20px 25px;
+    background-color: beige;
+    cursor: pointer;
+    width: 30%;
+    height: 8vh;
+    padding-left: 1%;
+}
+.final textarea{
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 20px 25px;
+    background-color: beige;
+    cursor: pointer;
+    padding-left: 1%;
+    padding-top: 1%;
+    color: black;
+    overflow:auto;
+    resize:none;
+}
+.final h1 span{
+    color: orangered;
+}
+.final button{
+    color: beige;
+    background-color: orangered;
+    padding: 1% 2% 1% 2%;
+    border: none;
+    border-radius: 5%;
+    font-size: large;
+    transition: 0.5s,ease;
+    font-size: medium;
+    }
+.final button:hover{
+     background-color: rgb(10, 10, 10);
+     color: orangered;
+     cursor: pointer;
+     transform: scale(1.1);
+    }
+
+/* final div */
+.footer{
+    padding: 0% 30% 0% 30%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    flex: 1fr 1fr 1fr;
+    gap: 6px;
+    width: 100%;
+}
+.footer section{
+    margin-left: 30%;
+    margin-top: 5%;
+}
+.footer section a{
+   border-radius: 0% 30% 0% 30%;
+   border: 2px solid orangered;
+   box-shadow:0 0 20px orangered ;
+   margin-left: 8%;
+   padding: 0.5%;
+}
+.footer div{
+   list-style: none;
+   display: flex;
+   justify-content: space-between;
+   color: beige;
+   align-items: center;
+   margin-top: 3%;
+}
+.footer p{
+    color: beige;
+    font-size: x-small;
+    font-weight: 500;
+    margin-top:3%;
+    text-align: center;
+}
+@media (max-width: 768px){
+    .footer{    padding: 0% 2% 0 2%;
+
+ }
+}
+/*footer*/

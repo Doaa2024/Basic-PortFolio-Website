@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom styles */
+    body {
+      background-color: beige;
+    }
+    .service-card {
+      background-color: #FF5733; /* Orange-red */
+      color: beige;
+      border: none;
+      border-radius: 10px;
+    }
+    .service-card:hover{
+      transform: translateY(-5px);
+    }
+    #card1:hover  #card2{
+      background-color: beige;
+    }
+    
+  </style>
+</head>
+<body>
+  <a href="index.html" style="color: #FF5733; font-size: large; margin-left: 1%"> <-Back</a>
+  <div class="container my-5">
+    <div style="border: solid 2px orangered ; background-color: #FF5733; border-radius: 5%; text-align: center;">
+    <h1 class="text-center mb-4" style="color: beige; text-decoration: underline;">My Services</h1>
+     </div>
+    <div class="row" style="padding-top: 8%;">
+      <div class="col-lg-4 col-md-6 mb-4 card1">
+        <div class="card service-card" id="container">
+          <div class="card-body card1">
+            <h5 class="card-title">Project Manager</h5>
+            <p class="card-text">From inception to completion, I ensure your projects are delivered on time and within budget.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 card2">
+        <div class="card service-card" id="cube">
+          <div class="card-body">
+            <h5 class="card-title">Consultation</h5>
+            <p class="card-text">Providing expert advice and guidance tailored to your communication engineering needs.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card service-card">
+          <div class="card-body" style="padding-bottom: 12%;">
+            <h5 class="card-title">Database Management</h5>
+            <p class="card-text">Efficiently organize and manage your data to ensure smooth operations.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card service-card">
+          <div class="card-body" style="padding-bottom: 12.5%;">
+            <h5 class="card-title">Web Development</h5>
+            <p class="card-text">Crafting responsive and visually appealing websites tailored to your needs.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card service-card">
+          <div class="card-body" style="padding-bottom: 12.5%;">
+            <h5 class="card-title">Circuit Designs</h5>
+            <p class="card-text">Designing innovative and efficient circuits to meet your specifications.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card service-card">
+          <div class="card-body">
+            <h5 class="card-title">Signal Processing</h5>
+            <p class="card-text">Utilizing advanced signal processing techniques for enhanced communication performance.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Add more service cards if needed -->
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+   /* const container = document.getElementById('container');
+const cube = document.getElementById('cube');
+
+container.addEventListener('mouseenter', () => {
+    cube.style.backgroundColor = 'black';
+});
+
+container.addEventListener('mouseleave', () => {
+    cube.style.backgroundColor = ''; // Reset to default color
+});
+*/
+/* Changing the property of an element while hover on another*/
+  </script>
+</body>
+</html>
